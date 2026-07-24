@@ -13,7 +13,7 @@ const SECTIONS = [
   },
   {
     title: "What I Do",
-    content: `${siteConfig.name} is a ${siteConfig.role}. This is placeholder copy — edit it in src/components/AboutPage.tsx to describe the work you do and the products you build.`,
+    content: `${siteConfig.name} is a ${siteConfig.role}. This is placeholder copy. Edit it in src/components/AboutPage.tsx to describe the work you do and the products you build.`,
   },
   {
     title: "My Journey",
@@ -21,11 +21,11 @@ const SECTIONS = [
   },
   {
     title: "Thesis",
-    content: `Share what you believe about your craft and where things are heading. This is placeholder copy — replace it with your own point of view.`,
+    content: `Share what you believe about your craft and where things are heading. This is placeholder copy. Replace it with your own point of view.`,
   },
   {
     title: "Beyond Code",
-    content: `A line or two about what you enjoy outside of work — hobbies, interests, and anything that makes you you.`,
+    content: `A line or two about what you enjoy outside of work. Hobbies, interests, and anything that makes you you.`,
   },
 ];
 

@@ -20,7 +20,7 @@ export const siteConfig = {
 
   social: {
     twitter: "https://x.com/onlyoneaman",
-    linkedin: "https://linkedin.com/in/yourhandle",
+    linkedin: "https://linkedin.com/in/onlyoneaman",
     github: "https://github.com/onlyoneaman",
     instagram: "",
     medium: "",

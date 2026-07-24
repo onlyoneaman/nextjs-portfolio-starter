@@ -2,7 +2,7 @@
   "name": "nextjs-portfolio-starter",
   "version": "1.0.0",
   "private": true,
-  "description": "Open-source Next.js portfolio starter — edit one config file and deploy.",
+  "description": "Open-source Next.js portfolio starter. Edit one config file and deploy.",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
