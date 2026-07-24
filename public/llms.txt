@@ -1,0 +1,10 @@
+# Your Name — Portfolio
+
+> Personal portfolio, blog, and projects. Built with the nextjs-portfolio-starter template.
+
+## Pages
+- / : Home
+- /about : About
+- /projects : Projects
+- /blogs : Blog
+- /contact : Contact
