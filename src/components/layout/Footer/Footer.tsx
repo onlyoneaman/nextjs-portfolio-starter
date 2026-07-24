@@ -41,6 +41,18 @@ const Footer = (
           <LiveTime />
         </div>
       </div>
+
+      {/* Optional credit for the template. Feel free to remove it. */}
+      <div className="text-center text-[11px] text-gray-600">
+        <a
+          className="hover:text-gray-800 hover:underline transition-colors duration-300 ease-in-out"
+          href="https://github.com/onlyoneaman/nextjs-portfolio-starter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Built with a template by @onlyoneaman ↗
+        </a>
+      </div>
     </footer>
   );
 };
