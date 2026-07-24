@@ -10,7 +10,7 @@ export const siteConfig = {
 
   email: "you@example.com",
   phone: "", // used by the contact call button; blank hides it
-  siteUrl: "https://example.com",
+  siteUrl: "https://template.amankumar.ai",
 
   avatar: "/images/avatar.png",
   resume: "/resume.pdf",
@@ -22,8 +22,8 @@ export const siteConfig = {
     twitter: "https://x.com/onlyoneaman",
     linkedin: "https://linkedin.com/in/onlyoneaman",
     github: "https://github.com/onlyoneaman",
-    instagram: "",
-    medium: "",
+    instagram: "https://instagram.com/_a_gryffindor",
+    medium: "https://onlyoneaman.medium.com",
   },
 
   seo: {
