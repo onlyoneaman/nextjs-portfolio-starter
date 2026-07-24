@@ -10,6 +10,8 @@
 
 [**Use this template**](https://github.com/onlyoneaman/nextjs-portfolio-starter/generate) · [Live demo](https://template.amankumar.ai) · [Report a bug](https://github.com/onlyoneaman/nextjs-portfolio-starter/issues)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/onlyoneaman/nextjs-portfolio-starter)
+
 ![Screenshot of the portfolio template homepage](./.github/assets/screenshot.png)
 
 If this saves you some time, a star or a [follow on X](https://x.com/onlyoneaman) means a lot.
@@ -82,7 +84,11 @@ The included `.npmrc` (`legacy-peer-deps=true`) is what lets the install go thro
 
 ### Vercel
 
-Import the repo at [vercel.com/new](https://vercel.com/new), set `SITE_URL` in the project's environment variables, and deploy.
+One click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/onlyoneaman/nextjs-portfolio-starter)
+
+Or import the repo at [vercel.com/new](https://vercel.com/new), then set `SITE_URL` in the project's environment variables.
 
 ## Feedback
 
