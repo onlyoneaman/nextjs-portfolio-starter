@@ -10,7 +10,7 @@
 
 [**Use this template**](https://github.com/onlyoneaman/nextjs-portfolio-starter/generate) · [Live demo](https://template.amankumar.ai) · [Report a bug](https://github.com/onlyoneaman/nextjs-portfolio-starter/issues)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/onlyoneaman/nextjs-portfolio-starter)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/onlyoneaman/nextjs-portfolio-starter) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/onlyoneaman/nextjs-portfolio-starter)
 
 ![Screenshot of the portfolio template homepage](./.github/assets/screenshot.png)
 
@@ -66,21 +66,18 @@ All optional. See `.env.example`, then copy it to `.env.local`:
 
 `npm run build` also builds the sitemap and RSS feed in the `postbuild` step.
 
-### Cloudflare Pages (Git integration)
+### Cloudflare (Workers static assets)
 
-The whole site is prerendered to static files (`output: "export"` in `next.config.mjs`), so it deploys as a plain static export. No adapter, no worker, no compatibility flags.
+The site is a static export (`output: "export"` in `next.config.mjs`) served straight from Cloudflare Workers static assets. Config lives in `wrangler.jsonc`. One click with the button above, or:
 
-1. Push your repo to GitHub (the Use this template button does this).
-2. In the Cloudflare dashboard go to **Workers & Pages**, then **Create**, then **Pages**, then **Connect to Git**, and pick your repo.
-3. Build settings:
-   - **Framework preset:** `Next.js (Static HTML Export)`
-   - **Build command:** `npx next build`
-   - **Build output directory:** `out`
-   - **Root directory:** leave blank
-4. Under **Settings → Environment variables**, add `SITE_URL` (your deployed URL) and any analytics keys from the table above.
-5. Hit **Save and Deploy**. After that, every push to your default branch redeploys.
+```bash
+npm install
+npm run deploy   # runs `next build`, then `wrangler deploy`
+```
 
-The included `.npmrc` (`legacy-peer-deps=true`) is what lets the install go through on Cloudflare's build image, so keep it. Node version comes from `.nvmrc`. If the build picks the wrong one, set a `NODE_VERSION` environment variable to match. The `/feed` redirect is handled by `public/_redirects`.
+For automatic deploys on every push, connect the repo under **Workers & Pages → Create → Workers → Connect to Git** (Workers Builds). Set the **build command** to `npm run build` and the **deploy command** to `npx wrangler deploy`. Add `SITE_URL` and any analytics keys as environment variables.
+
+The included `.npmrc` (`legacy-peer-deps=true`) is what lets the install go through on Cloudflare's build image, so keep it. Node version comes from `.nvmrc`. The `/feed` redirect is handled by `public/_redirects`.
 
 ### Vercel
 

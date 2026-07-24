@@ -34,7 +34,7 @@ Node version is pinned in `.nvmrc`. This repo uses `legacy-peer-deps=true` (`.np
 4. Edit `src/data/experiencesData.ts` with your work history (it shows on the About page), and update the company logos in `public/images/companies/`.
 5. Delete the sample posts in `content/blogs/` and `content/projects/` and add your own markdown with the same frontmatter shape. Put images in `public/content/...`.
 6. Update `public/llms.txt` with your name and pages.
-7. Set `SITE_URL` (see `.env.example`), run `npm run build`, then deploy. The site is a static export (`output: "export"`), so it deploys as plain files: Cloudflare Pages with the "Next.js (Static HTML Export)" preset (build `npx next build`, output `out`, no compatibility flags) or Vercel. See the README "Deploy" section for exact steps.
+7. Set `SITE_URL` (see `.env.example`), then deploy. The site is a static export (`output: "export"`, output dir `out/`). On Cloudflare it runs as a Worker with static assets (`wrangler.jsonc`); deploy with `npm run deploy` (build + `wrangler deploy`) or the "Deploy to Cloudflare" button. Vercel also works. See the README "Deploy" section.
 
 ## Verify before you're done
 
