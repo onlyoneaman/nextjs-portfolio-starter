@@ -11,14 +11,14 @@ This second sample shows how a blog list renders with more than one post.
 
 ## Frontmatter fields
 
-- `title` — shown in the list and on the post page
-- `description` — used for the preview and SEO
-- `date` — controls ordering (newest first)
-- `type` — free-form label (e.g. `post`, `thought`)
-- `tags` — an array of tags
-- `image` — cover image path under `public/`
+- `title` shows in the list and on the post page
+- `description` is used for the preview and SEO
+- `date` controls ordering, newest first
+- `type` is a free-form label (for example `post` or `thought`)
+- `tags` is an array of tags
+- `image` is the cover image path under `public/`
 
 ## Tips
 
-Keep filenames short and lowercase with dashes — the filename becomes the URL slug,
+Keep filenames short and lowercase with dashes. The filename becomes the URL slug,
 so this post is served at `/blogs/writing-with-markdown`.

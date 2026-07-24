@@ -2,37 +2,34 @@
 
 # Next.js Portfolio Starter
 
-**A clean, config-driven portfolio. Edit one file, drop in markdown, deploy.**
+**A portfolio you set up by editing one config file. Write posts in markdown, then deploy.**
 
 [![Stars](https://img.shields.io/github/stars/onlyoneaman/nextjs-portfolio-starter?style=social)](https://github.com/onlyoneaman/nextjs-portfolio-starter/stargazers)
 [![Follow @onlyoneaman](https://img.shields.io/badge/Follow-%40onlyoneaman-000?logo=x&logoColor=white)](https://x.com/onlyoneaman)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-[**Use this template**](https://github.com/onlyoneaman/nextjs-portfolio-starter/generate) · [Live demo](https://amankumar.ai) · [Report a bug](https://github.com/onlyoneaman/nextjs-portfolio-starter/issues)
+[**Use this template**](https://github.com/onlyoneaman/nextjs-portfolio-starter/generate) · [Live demo](https://template.amankumar.ai) · [Report a bug](https://github.com/onlyoneaman/nextjs-portfolio-starter/issues)
 
 ![Screenshot of the portfolio template homepage](./.github/assets/screenshot.png)
 
-⭐ **Find this useful? Star the repo and [follow @onlyoneaman](https://x.com/onlyoneaman) — it genuinely helps.**
+If this saves you some time, a star or a [follow on X](https://x.com/onlyoneaman) means a lot.
 
 </div>
 
-Built with Next.js 14, Tailwind CSS, and shadcn/ui. Blog and projects are plain
-markdown files; your identity, links, SEO, and navigation all live in a single
-`site.config.ts`. Adapted from [amankumar.ai](https://amankumar.ai).
+Built with Next.js 14, Tailwind CSS, and shadcn/ui. Your blog and projects are plain markdown files. Your name, links, SEO, and navigation all live in one `site.config.ts`. Adapted from [amankumar.ai](https://amankumar.ai).
 
-## Features
+## What you get
 
-- Config-driven — all personal data in `src/config/site.config.ts`
-- Markdown blog and projects (frontmatter via gray-matter)
-- SEO defaults, JSON-LD, sitemap, and RSS generated for you
+- One config file for everything personal (`src/config/site.config.ts`)
+- Blog and projects written as markdown (frontmatter via gray-matter)
+- SEO tags, JSON-LD, sitemap, and RSS generated for you
 - Dark mode, responsive layout, shadcn/ui components
-- Optional Google Analytics + PostHog, Cal.com contact booking
-- Agent-friendly: an `AGENTS.md` lets an AI assistant personalize it for you
+- Optional Google Analytics and PostHog, plus Cal.com booking on the contact page
+- An `AGENTS.md` so an AI assistant can set the whole thing up for you
 
 ## Quick start
 
-The fastest way is the green **“Use this template”** button at the top of the GitHub
-repo — it creates your own fresh repo with no history. Then:
+Click the green **Use this template** button at the top of the repo. That gives you your own copy with a clean history. Then:
 
 ```bash
 git clone https://github.com/<you>/<your-repo>.git
@@ -43,71 +40,55 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Customize
+## Make it yours
 
-1. **Identity** — edit every field in `src/config/site.config.ts` (name, role, bio,
-   email, socials, SEO, nav, `calLink`, `githubUsername`). Leave a field blank (`""`)
-   to hide the UI it controls.
-2. **Assets** — replace `public/images/avatar.png` and `public/resume.pdf`; update
-   `public/site.webmanifest` and the favicons in `public/`.
-3. **Experience** — edit `src/data/experiencesData.ts` (shown on the About page) and
-   the logos in `public/images/companies/`.
-4. **Content** — delete the samples in `content/blogs/` and `content/projects/` and
-   add your own `.md` files. The filename becomes the URL slug; put images under
-   `public/content/...`.
-5. **llms.txt** — update `public/llms.txt` with your name and pages.
+1. **Your details.** Edit every field in `src/config/site.config.ts` (name, role, bio, email, socials, SEO, nav, `calLink`, `githubUsername`). Leave a field as `""` to hide the thing it controls.
+2. **Assets.** Swap `public/images/avatar.png` and `public/resume.pdf`, then update `public/site.webmanifest` and the favicons in `public/`.
+3. **Experience.** Edit `src/data/experiencesData.ts` (it shows on the About page) and drop your company logos in `public/images/companies/`.
+4. **Content.** Delete the sample files in `content/blogs/` and `content/projects/` and add your own. The filename becomes the URL slug. Put post images under `public/content/...`.
+5. **llms.txt.** Update `public/llms.txt` with your name and pages.
 
-Prefer to let an AI do it? Open this repo in any agent that reads `AGENTS.md`
-(Claude Code, Codex, Cursor, Copilot, Gemini CLI…) and ask it to "personalize this
-portfolio template for me" — the playbook in `AGENTS.md` walks it through every step.
+Rather have an AI do it? Open the repo in any assistant that reads `AGENTS.md` (Claude Code, Codex, Cursor, Copilot, Gemini CLI) and ask it to set the site up for you. The playbook in `AGENTS.md` walks it through each step.
 
 ## Environment variables
 
-All optional — see `.env.example`. Copy it to `.env.local`:
+All optional. See `.env.example`, then copy it to `.env.local`:
 
 | Variable | Purpose |
 | --- | --- |
-| `SITE_URL` | Base URL for sitemap + RSS |
-| `NEXT_PUBLIC_MEASUREMENT_ID` | Google Analytics (blank = off) |
-| `NEXT_PUBLIC_POSTHOG_KEY` / `NEXT_PUBLIC_POSTHOG_HOST` | PostHog (blank = off) |
+| `SITE_URL` | Base URL for sitemap and RSS |
+| `NEXT_PUBLIC_MEASUREMENT_ID` | Google Analytics (blank turns it off) |
+| `NEXT_PUBLIC_POSTHOG_KEY` / `NEXT_PUBLIC_POSTHOG_HOST` | PostHog (blank turns it off) |
 
 ## Deploy
 
-`npm run build` also generates the sitemap and RSS feed (via the `postbuild` step).
+`npm run build` also builds the sitemap and RSS feed in the `postbuild` step.
 
 ### Cloudflare Pages (Git integration)
 
-This template deploys as-is on Cloudflare Pages — the site is fully static (SSG).
+The site is fully static, so it runs on Cloudflare Pages with no extra setup.
 
-1. Push your repo to GitHub (the **Use this template** button does this).
-2. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**,
-   and pick your repo.
+1. Push your repo to GitHub (the Use this template button does this).
+2. In the Cloudflare dashboard go to **Workers & Pages**, then **Create**, then **Pages**, then **Connect to Git**, and pick your repo.
 3. Build settings:
-   - **Framework preset:** `Next.js` (fills in the build command and output directory)
+   - **Framework preset:** `Next.js` (this fills in the build command and output directory)
    - **Build command:** `npm run build`
-4. **Settings → Functions → Compatibility flags:** add `nodejs_compat` (required for the
-   Next.js build on Cloudflare).
-5. **Settings → Environment variables:** add `SITE_URL` (your deployed URL), plus the
-   optional analytics keys from the table above.
-6. **Save and Deploy.** Pushes to your default branch redeploy automatically.
+4. Under **Settings → Functions → Compatibility flags**, add `nodejs_compat`. The Next.js build needs it.
+5. Under **Settings → Environment variables**, add `SITE_URL` (your deployed URL) and any analytics keys from the table above.
+6. Hit **Save and Deploy**. After that, every push to your default branch redeploys.
 
-> The included `.npmrc` (`legacy-peer-deps=true`) is what lets the install succeed on
-> Cloudflare's build image — keep it. Node version is read from `.nvmrc`; if the build
-> picks the wrong one, set a `NODE_VERSION` environment variable to match.
+The included `.npmrc` (`legacy-peer-deps=true`) is what lets the install go through on Cloudflare's build image, so keep it. Node version comes from `.nvmrc`. If the build picks the wrong one, set a `NODE_VERSION` environment variable to match.
 
-### Vercel (alternative)
+### Vercel
 
-Import the repo at [vercel.com/new](https://vercel.com/new), set `SITE_URL` in the
-project's environment variables, and deploy.
+Import the repo at [vercel.com/new](https://vercel.com/new), set `SITE_URL` in the project's environment variables, and deploy.
 
 ## Feedback
 
-Got ideas or improvements? [Open an issue or a PR](https://github.com/onlyoneaman/nextjs-portfolio-starter/issues) — happy to hear them.
+Have an idea or found something broken? [Open an issue or a PR](https://github.com/onlyoneaman/nextjs-portfolio-starter/issues). I read them.
 
 ## License
 
-MIT — see [LICENSE](./LICENSE). The **code** is free to use. Please replace all
-personal content and branding with your own; don't ship it with the sample identity,
-and don't present someone else's writing as yours.
+MIT, see [LICENSE](./LICENSE). The code is free to use. Please put your own content and branding in before you ship it, and don't pass off someone else's writing as yours.
 
 Built by [Aman](https://amankumar.ai) · [@onlyoneaman](https://x.com/onlyoneaman)

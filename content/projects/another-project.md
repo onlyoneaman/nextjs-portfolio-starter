@@ -11,7 +11,7 @@ status: "archived"
 highlight: "Set status to active or archived per project"
 ---
 
-A second sample project. Note the different `status` and button `label` — the card
+A second sample project. Note the different `status` and button `label`. The card
 adapts to whatever you put in the frontmatter.
 
 Delete both sample projects once you've added your own.

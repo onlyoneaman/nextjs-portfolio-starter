@@ -12,7 +12,7 @@ Welcome to your new portfolio. This post lives in `content/blogs/hello-world.md`
 ## Writing posts
 
 Every file in `content/blogs/` is a post. The block at the top (between the `---`
-lines) is the frontmatter — it sets the title, description, date, tags, and cover
+lines) is the frontmatter. It sets the title, description, date, tags, and cover
 image. Put post images under `public/content/blogs/` and reference them with an
 absolute path like `/content/blogs/your-image.png`.
 

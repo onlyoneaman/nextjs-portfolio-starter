@@ -1,8 +1,6 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// Edit this file to make the template yours. It is the single source of truth for
-// your identity, links, SEO defaults, and navigation. Leave a field blank ("") to
-// hide the UI that depends on it (e.g. an empty `phone` hides the call button).
-// ─────────────────────────────────────────────────────────────────────────────
+// Edit this file to make the template yours. Everything about your identity,
+// links, SEO, and navigation lives here. Leave a field blank ("") to hide the UI
+// that depends on it. For example, an empty `phone` hides the call button.
 
 export const siteConfig = {
   name: "Your Name",
