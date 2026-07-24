@@ -16,12 +16,12 @@ export const siteConfig = {
   resume: "/resume.pdf",
   calLink: "", // your Cal.com handle (e.g. "yourname/30min"); blank hides the booking embed
 
-  githubUsername: "yourhandle", // used for the GitHub contributions graph
+  githubUsername: "onlyoneaman", // used for the GitHub contributions graph
 
   social: {
     twitter: "https://x.com/onlyoneaman",
     linkedin: "https://linkedin.com/in/yourhandle",
-    github: "https://github.com/yourhandle",
+    github: "https://github.com/onlyoneaman",
     instagram: "",
     medium: "",
   },
