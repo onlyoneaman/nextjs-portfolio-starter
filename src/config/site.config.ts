@@ -35,6 +35,7 @@ export const siteConfig = {
 
   nav: [
     { name: "Projects", path: "/projects", description: "Things I've built." },
+    { name: "Experience", path: "/experience", description: "Where I've worked." },
     { name: "Blogs", path: "/blogs", description: "Notes and writing." },
     { name: "About", path: "/about", description: "About me." },
     { name: "Contact", path: "/contact", description: "Get in touch." },

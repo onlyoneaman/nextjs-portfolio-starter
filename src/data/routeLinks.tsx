@@ -1,5 +1,6 @@
 import {RouteLink} from "@/types";
 import {IoHomeOutline, IoMailOutline, IoNavigate, IoPencilOutline} from "react-icons/io5";
+import {MdOutlineMapsHomeWork} from "react-icons/md";
 import {FaRegUserCircle} from "react-icons/fa";
 
 const links: RouteLink[] = [
@@ -12,6 +13,11 @@ const links: RouteLink[] = [
     path: "/projects",
     name: "Projects",
     icon: <IoNavigate/>
+  },
+  {
+    path: "/experience",
+    name: "Experience",
+    icon: <MdOutlineMapsHomeWork/>
   },
   {
     path: "/blogs",

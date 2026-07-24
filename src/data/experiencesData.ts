@@ -11,9 +11,9 @@ const experiencesData: Experience[] = [
     fullLogo: '/images/companies/example.webp',
     techStack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
     points: [
-      'Placeholder highlight — describe a key project or responsibility here.',
-      'Placeholder highlight — mention an impact or outcome you delivered.',
-      'Placeholder highlight — add another accomplishment worth showcasing.',
+      'Describe a key project or responsibility here.',
+      'Mention an impact or outcome you delivered.',
+      'Add another accomplishment worth showcasing.',
     ],
   },
   {
@@ -26,8 +26,8 @@ const experiencesData: Experience[] = [
     fullLogo: '/images/companies/acme.webp',
     techStack: ["React", "JavaScript", "CSS"],
     points: [
-      'Placeholder highlight — describe your work on the frontend here.',
-      'Placeholder highlight — mention a feature or improvement you shipped.',
+      'Describe your work on the frontend here.',
+      'Mention a feature or improvement you shipped.',
     ],
   },
 ];
