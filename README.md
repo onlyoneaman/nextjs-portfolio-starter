@@ -66,18 +66,19 @@ All optional. See `.env.example`, then copy it to `.env.local`:
 
 ### Cloudflare Pages (Git integration)
 
-The site is fully static, so it runs on Cloudflare Pages with no extra setup.
+The whole site is prerendered to static files (`output: "export"` in `next.config.mjs`), so it deploys as a plain static export. No adapter, no worker, no compatibility flags.
 
 1. Push your repo to GitHub (the Use this template button does this).
 2. In the Cloudflare dashboard go to **Workers & Pages**, then **Create**, then **Pages**, then **Connect to Git**, and pick your repo.
 3. Build settings:
-   - **Framework preset:** `Next.js` (this fills in the build command and output directory)
-   - **Build command:** `npm run build`
-4. Under **Settings → Functions → Compatibility flags**, add `nodejs_compat`. The Next.js build needs it.
-5. Under **Settings → Environment variables**, add `SITE_URL` (your deployed URL) and any analytics keys from the table above.
-6. Hit **Save and Deploy**. After that, every push to your default branch redeploys.
+   - **Framework preset:** `Next.js (Static HTML Export)`
+   - **Build command:** `npx next build`
+   - **Build output directory:** `out`
+   - **Root directory:** leave blank
+4. Under **Settings → Environment variables**, add `SITE_URL` (your deployed URL) and any analytics keys from the table above.
+5. Hit **Save and Deploy**. After that, every push to your default branch redeploys.
 
-The included `.npmrc` (`legacy-peer-deps=true`) is what lets the install go through on Cloudflare's build image, so keep it. Node version comes from `.nvmrc`. If the build picks the wrong one, set a `NODE_VERSION` environment variable to match.
+The included `.npmrc` (`legacy-peer-deps=true`) is what lets the install go through on Cloudflare's build image, so keep it. Node version comes from `.nvmrc`. If the build picks the wrong one, set a `NODE_VERSION` environment variable to match. The `/feed` redirect is handled by `public/_redirects`.
 
 ### Vercel
 

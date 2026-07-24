@@ -1,15 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: "/feed",
-        destination: "/rss.xml",
-        permanent: true,
-      },
-    ];
-  },
+  // Static export: the whole site is prerendered, so it deploys as plain files
+  // (Cloudflare Pages "Next.js (Static HTML Export)", Vercel, GitHub Pages, etc.).
+  output: "export",
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
